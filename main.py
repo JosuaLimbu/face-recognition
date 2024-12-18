@@ -4,7 +4,7 @@ from test import Face_Recognition
 sfr = Face_Recognition()
 sfr.load_encoding_images("images/")
 
-cap = cv2.VideoCapture(1) # Your camera index
+cap = cv2.VideoCapture(0) # Your camera index
 
 while True:
     ret, frame = cap.read()
